@@ -28,11 +28,11 @@ namespace Lab7_1
             double s2 = CalcSquare(x2, y2, z2);
 
 
-            if ((x1 + y1 < z1) || (x1 + z1 < y1) || (z1 + y1 < x1))
+            if ((x1 + y1 <= z1) || (x1 + z1 <= y1) || (z1 + y1 <= x1))
             {
                 Console.WriteLine("Ошибка. Ваш первый треугольник вовсе не треугольник!");
             }
-            else if ((x2 + y2 < z2) || (x2 + z2 < y2) || (z2 + y2 < x2))
+            else if ((x2 + y2 <= z2) || (x2 + z2 <= y2) || (z2 + y2 <= x2))
             {
                 Console.WriteLine("Ошибка. Ваш второй треугольник вовсе не треугольник!");
             }
